@@ -5,7 +5,7 @@ class Jdcomment_spider(object):
 
     # 请求头
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36'
     }
 
     def __init__(self, file_name='jd_commet'):
@@ -53,9 +53,9 @@ class Jdcomment_spider(object):
 
 
     def parse_max_page(self):
-        for page_num in range(49):  # 抓包获得最大页数
+        for page_num in range(99):  # 抓包获得最大页数
             # 指定通用的url模板
-            new_url = f'https://club.jd.com/comment/productPageComments.action?productId=10023108638660&score=0&sortType=5&page={page_num}&pageSize=10&isShadowSku=0&rid=0&fold=1'
+            new_url = f'https://club.jd.com/comment/productPageComments.action?productId=10100621362176&score=0&sortType=5&page={page_num}&pageSize=10&isShadowSku=0&rid=0&fold=1'
 
             print(f'正在获取第{page_num}页')
 
